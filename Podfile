@@ -8,6 +8,9 @@ def pods
     pod 'SDWebImage'
     pod 'Alamofire'
     pod 'Toast-Swift'
+    pod 'WXImageCompress', '~> 0.1.1'
+    pod 'MBProgressHUD'
+    pod 'IQKeyboardManagerSwift'
 end
 
 target 'IntelligentCorrection' do

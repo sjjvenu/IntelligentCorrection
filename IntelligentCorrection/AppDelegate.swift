@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let mainVc = MainViewController.init();
         let mainNav = UINavigationController.init(rootViewController: mainVc);
+        
+        IQKeyboardManager.shared.enable = true;
+        
         self.window = UIWindow.init();
         self.window?.frame = UIScreen.main.bounds;
         self.window?.rootViewController = mainNav;

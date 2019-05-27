@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F067D38229BDD1C00AE3390 /* EvaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */; };
 		2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */; };
 		2FAB9EE2229B702D00BACC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE1229B702D00BACC77 /* Assets.xcassets */; };
 		2FAB9EE5229B702D00BACC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		25D18218D00FF78D7F7B75ED /* Pods-IntelligentCorrection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelligentCorrection.release.xcconfig"; path = "Target Support Files/Pods-IntelligentCorrection/Pods-IntelligentCorrection.release.xcconfig"; sourceTree = "<group>"; };
+		2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateViewController.swift; sourceTree = "<group>"; };
 		2FAB9ED7229B702C00BACC77 /* IntelligentCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FAB9EE1229B702D00BACC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */,
 				2FAB9EEC229B737200BACC77 /* MainViewController.swift */,
+				2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */,
 				2FAB9EE1229B702D00BACC77 /* Assets.xcassets */,
 				2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */,
 				2FAB9EE6229B702D00BACC77 /* Info.plist */,
@@ -82,7 +85,6 @@
 				EE742CAEFC264C3071DCCA5B /* Pods-IntelligentCorrection.debug.xcconfig */,
 				25D18218D00FF78D7F7B75ED /* Pods-IntelligentCorrection.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,20 +166,26 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IntelligentCorrection/Pods-IntelligentCorrection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/WXImageCompress/WXImageCompress.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WXImageCompress.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */,
+				2F067D38229BDD1C00AE3390 /* EvaluateViewController.swift in Sources */,
 				2FAB9EED229B737200BACC77 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +362,9 @@
 			baseConfigurationReference = EE742CAEFC264C3071DCCA5B /* Pods-IntelligentCorrection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8JG9Q5SKA;
 				INFOPLIST_FILE = IntelligentCorrection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrecion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,7 +384,9 @@
 			baseConfigurationReference = 25D18218D00FF78D7F7B75ED /* Pods-IntelligentCorrection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8JG9Q5SKA;
 				INFOPLIST_FILE = IntelligentCorrection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,6 +395,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrecion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
