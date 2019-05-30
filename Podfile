@@ -12,6 +12,7 @@ def pods
     pod 'WXImageCompress', '~> 0.1.1'
     pod 'MBProgressHUD'
     pod 'IQKeyboardManagerSwift'
+    pod 'JPImageresizerView'
 end
 
 target 'IntelligentCorrection' do

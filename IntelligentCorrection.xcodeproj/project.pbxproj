@@ -88,6 +88,7 @@
 		2F067DE3229D4C0400AE3390 /* OriginEvaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */; };
 		2F067DE5229D56CD00AE3390 /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */; };
 		2F067DE7229E2A3300AE3390 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE6229E2A3300AE3390 /* UserData.swift */; };
+		2F9DAC98229FC2BB0023263D /* CutImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAC97229FC2BB0023263D /* CutImageViewController.swift */; };
 		2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */; };
 		2FAB9EE2229B702D00BACC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE1229B702D00BACC77 /* Assets.xcassets */; };
 		2FAB9EE5229B702D00BACC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */; };
@@ -187,6 +188,7 @@
 		2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginEvaViewController.swift; sourceTree = "<group>"; };
 		2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
 		2F067DE6229E2A3300AE3390 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2F9DAC97229FC2BB0023263D /* CutImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutImageViewController.swift; sourceTree = "<group>"; };
 		2FAB9ED7229B702C00BACC77 /* IntelligentCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FAB9EE1229B702D00BACC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */,
 				2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */,
 				2F067DE6229E2A3300AE3390 /* UserData.swift */,
+				2F9DAC97229FC2BB0023263D /* CutImageViewController.swift */,
 				2FAB9EE1229B702D00BACC77 /* Assets.xcassets */,
 				2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */,
 				2FAB9EE6229B702D00BACC77 /* Info.plist */,
@@ -518,6 +521,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-IntelligentCorrection/Pods-IntelligentCorrection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JPImageresizerView/JPImageresizerView.framework",
 				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -532,6 +536,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPImageresizerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -579,6 +584,7 @@
 				2F067DDF229D232200AE3390 /* RemarkTableViewCell.swift in Sources */,
 				2F067DE7229E2A3300AE3390 /* UserData.swift in Sources */,
 				2F067DE3229D4C0400AE3390 /* OriginEvaViewController.swift in Sources */,
+				2F9DAC98229FC2BB0023263D /* CutImageViewController.swift in Sources */,
 				2F067D4F229CDCFD00AE3390 /* NSString+Extention.m in Sources */,
 				2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */,
 				2F067DDD229D07AD00AE3390 /* EnhancesViewController.swift in Sources */,

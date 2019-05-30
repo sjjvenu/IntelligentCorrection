@@ -13,7 +13,8 @@ import WXImageCompress
 import Toast_Swift
 import SnapKit
 
-class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate {
+class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate,CutImageViewControlleDelegate {
+    
     
     fileprivate var _gradeID:Int!;
     fileprivate var gradeID:Int {
@@ -409,61 +410,69 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        self.dismiss(animated: true, completion: nil);
         if let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             let compressImage = chosenImage.wxCompress();
-            if let data = compressImage.pngData() as NSData? {
-                Alamofire.upload(multipartFormData: { (multipartFormData) in
-                    multipartFormData.append(data as Data, withName: "file", fileName: "1.png", mimeType: "image/png")
-                }, to: "https://www.znpigai.com/ocrFileUploadAction_upload", encodingCompletion: { (result) in
-                    switch result {
-                    case .success(let upload, _, _):
-                        print(result)
-                        
-                        let hudProgress = MBProgressHUD.showAdded(to: self.view, animated: true);
-                        hudProgress.mode = MBProgressHUDMode.indeterminate;
-                        hudProgress.label.text = "正在识别，请稍后";
-                        upload.uploadProgress(closure: { (progress) in
-                            hudProgress.progress = Float(progress.completedUnitCount);
-                        })
-                        
-                        upload.responseJSON { response in
-                            //print response.result
-                            if let json = response.result.value as? NSDictionary {
-                                if let result = json["result"] as? Bool,result {
-                                    NSLog("upload success");
-                                    hudProgress.hide(animated: true);
-                                    if let articleContent = json["articleContent"] as? String,articleContent.count > 0 {
-                                        //var uploadFileUrl = json["uploadFileUrl"] as? String;
-                                        if self.isCleanContent == false {
-                                            self.contentView.text.append(articleContent);
-                                        }
-                                        else {
-                                            self.contentView.text = articleContent;
-                                        }
-                                        self.isCleanContent = false;
-                                        self.contentView.textColor = UIColor.black;
-                                        self.dismiss(animated: true, completion: nil);
-                                        return;
-                                    }
-                                }
-                            }
-                            print(response);
-                            hudProgress.hide(animated: true);
-                            self.view.makeToast("识别失败!",duration:1.0,position:.center);
-                        }
-                        
-                    case .failure(let encodingError):
-                        print(encodingError);
-                        self.view.makeToast("识别失败!",duration:1.0,position:.center);
-                    }
-                })
-                
-                
-            }
+            let vc = CutImageViewController.init();
+            vc.delegate = self;
+            vc.resizeImage = compressImage;
+            self.present(vc, animated: true, completion: nil);
+            
         }
-        self.dismiss(animated: true, completion: nil);
     }
     
     
     
+    func imageCutCompletion(image: UIImage) {
+        
+        if let data = image.pngData() as NSData? {
+            Alamofire.upload(multipartFormData: { (multipartFormData) in
+                multipartFormData.append(data as Data, withName: "file", fileName: "1.png", mimeType: "image/png")
+            }, to: "https://www.znpigai.com/ocrFileUploadAction_upload", encodingCompletion: { (result) in
+                switch result {
+                case .success(let upload, _, _):
+                    print(result)
+                    
+                    let hudProgress = MBProgressHUD.showAdded(to: self.view, animated: true);
+                    hudProgress.mode = MBProgressHUDMode.indeterminate;
+                    hudProgress.label.text = "正在识别，请稍后";
+                    upload.uploadProgress(closure: { (progress) in
+                        hudProgress.progress = Float(progress.completedUnitCount);
+                    })
+                    
+                    upload.responseJSON { response in
+                        //print response.result
+                        if let json = response.result.value as? NSDictionary {
+                            if let result = json["result"] as? Bool,result {
+                                NSLog("upload success");
+                                hudProgress.hide(animated: true);
+                                if let articleContent = json["articleContent"] as? String,articleContent.count > 0 {
+                                    //var uploadFileUrl = json["uploadFileUrl"] as? String;
+                                    if self.isCleanContent == false {
+                                        self.contentView.text.append(articleContent);
+                                    }
+                                    else {
+                                        self.contentView.text = articleContent;
+                                    }
+                                    self.isCleanContent = false;
+                                    self.contentView.textColor = UIColor.black;
+                                    self.dismiss(animated: true, completion: nil);
+                                    return;
+                                }
+                            }
+                        }
+                        print(response);
+                        hudProgress.hide(animated: true);
+                        self.view.makeToast("识别失败!",duration:1.0,position:.center);
+                    }
+                    
+                case .failure(let encodingError):
+                    print(encodingError);
+                    self.view.makeToast("识别失败!",duration:1.0,position:.center);
+                }
+            })
+            
+            
+        }
+    }
 }
