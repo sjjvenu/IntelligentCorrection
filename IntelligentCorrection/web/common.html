@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="shortcut icon" href="https://www.znpigai.com/newportal/assets/img/icon.png">
+<script src="./html5shiv.js"></script>
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Cache" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link href="./style.css" rel="stylesheet">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link href="./bootstrap-responsive.min.css" rel="stylesheet">
+<link href="./style-responsive.css" rel="stylesheet">
+<link href="./jquery.qtip.min.css" rel="stylesheet">
+<link href="./annotation.css" rel="stylesheet">
+<link rel="stylesheet" href="./jquery.toast.min.css">
+<script type="text/javascript" src="./site_common(1).js"></script>
+<script type="text/javascript" src="./writing_canvas.js"></script>
+<style>
+.modal-backdrop, .modal-backdrop.fade.in {
+	opacity: .1;
+	filter: alpha(opacity = 80);
+}
+
+.modal.fade.in {
+	top: 5%;
+}
+
+.modal-body {
+	max-height: 450px;
+	padding: 10px;
+}
+
+#paragraphMarkEntityList span.mark_mac {
+
+    color: #468847;
+    cursor: pointer;
+    background: #20A0FF;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+    padding: 1px 5.7px;
+	height: 18px !important;
+	width: 14px !important;
+	font-size: 11px;
+	line-height: 24px !important;
+
+}
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="./layui.css">
+<link href="./mombobox.css" rel="stylesheet">
+<link href="./bootstrap-switch.css" rel="stylesheet">
+<link href="./style.patch.css" rel="stylesheet">
+<link href="./stu_review.css" rel="stylesheet">
+<link href="./check_machine_review.css" rel="stylesheet">
+<link href="./codemirror.css" rel="stylesheet">
+<link href="./mergely.css" rel="stylesheet">
+<!-- new -->
+<link href="./computer-review-list.css" rel="stylesheet">
+
+<script src="./popper.min.js"></script>
+<script type="text/javascript" src="./bootstrap.min.js"></script>
+<script type="text/javascript" src="./json2.js"></script>
+<script type="text/javascript" src="./md5.js"></script>
+<script type="text/javascript" src="./iw.js"></script>
+<script type="text/javascript" src="./moment.js"></script>
+<script type="text/javascript" src="./publicSetup.js"></script>
+<script type="text/javascript" src="./header.js"></script>
+<script type="text/javascript" src="./jquery.qtip.min.js"></script>
+<script type="text/javascript" src="./radialIndicator.js"></script>
+<script type="text/javascript" src="./layui.all.js"></script><link id="layuicss-laydate" rel="stylesheet" href="./laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./layer.css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./code.css" media="all">
+<script type="text/javascript" src="./commonMethod.js"></script>
+
+<script type="text/javascript" src="./codemirror.js"></script>
+	<script type="text/javascript" src="./jquery.raty.min.js"></script>
+	<script type="text/javascript" src="./peek_text.js"></script>
+	<script type="text/javascript" src="./common.min.js"></script>
+	<script type="text/javascript" src="./teacher_anno.str_mb.js"></script>
+
+	<script type="text/javascript" src="./annotation.common.min.js"></script>
+	<script type="text/javascript" src="./right1.min.js"></script>
+	<script type="text/javascript" src="./diff.js"></script>
+	<script type="text/javascript" src="./diff.min.js"></script>
+	<script type="text/javascript" src="./computer-review-list.js"></script>
+
+	<script type="text/javascript" src="./jquery.bootstrap.teninedialog.js"></script>
+	<script type="text/javascript" src="./writing.js"></script>
+	<script type="text/javascript" src="./jquery.placeholder.js"></script>
+	<script type="text/javascript" src="./jquery.toast.min.js"></script>
+	<script type="text/javascript" src="./writing_history_compare.js"></script>
+
+	<script type="text/javascript" src="./writing_evaluation_tab.js"></script>
+<style>
+
+@media (min-width:1200px) {
+ .container {
+  max-width:1167px;
+ }
+}
+
+.container {
+    max-width: 1167px;
+    font-size: 16px;
+}
+
+.container-in {
+	padding-top: 100px;
+	position: relative;
+}
+
+#compareLeftContent del {
+	color: lightgrey;
+}
+
+#compareLeftContent ins {
+	display: none;
+}
+
+#compareRightContent del {
+	display: none;
+}
+
+#compareRightContent ins {
+	color: blue;
+}
+
+.print {
+	display: none;
+}
+
+.para {
+	padding-left: 0px;
+}
+
+.card-body {
+	min-height: 150px;
+}
+
+.green_line_mark {
+	border-bottom-color:rgb(70, 136, 71);
+	border-bottom-style: solid;
+	border-bottom-width: 0.883333px;
+	color: rgb(70, 136, 71);
+}
+
+.zn_remark {
+	color: #ff7a7a;
+	font-style: italic;
+}
+
+.zn_source {
+	color: black;
+}
+
+.mark_mac {
+	height: 18px !important;
+	width: 14px !important;
+	font-size: 11px;
+	line-height: 24px !important;
+}
+
+.pronounceMediaIcon {
+	cursor: pointer;
+}
+
+.highlight {
+	color : #F7BA2A;
+	background: white;
+}
+
+.zn_tips {
+	color: #56ad5a;
+}
+
+.paragraphContentEditor {
+	clear: both;
+	font-size: 16px;
+	width: 1044px;
+	height: 200px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px solid #c9c9c9;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.writing-tabs > li > a:hover {
+	background: #efebeb;
+}
+
+#table_anno > p {
+	margin-top: 20px;
+}
+
+.advantageCount, .disadvantageCount, .paragraphRemarkCount {
+	cursor: pointer;
+}
+
+#remark p {
+	padding-right: 5px;
+}
+
+</style>
+
+</head>
+<body class="ng-tns-0-8" style="">
+
+

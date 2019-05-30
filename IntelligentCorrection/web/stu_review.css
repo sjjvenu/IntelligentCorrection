@@ -1,0 +1,14 @@
+/*
+ * 
+ */
+.thumbnail{
+	overflow:auto;
+	overflow-x:hidden;
+}
+.thumbnail-reset{
+	background: #FFFFFF;
+    border: 0;
+    box-shadow: 0 1px 4px 0 rgba(192,204,218,0.50);
+    border-radius: 4px;
+    padding: 24px;
+}

@@ -1,0 +1,253 @@
+/**
+ * css for check_machine_review.html
+ */
+.scores{
+	min-height: 80px;
+}
+.score_text{
+	min-width: 50px;
+	font-family: Microsoft YaHei;
+    font-size: 18px;
+    font-weight: bold;
+	height: 80px;
+}
+
+.score{
+	color: #FF0000;
+    /* font-family: Microsoft YaHei; */
+    font-size: 38px;
+    font-weight: bold;
+	height: 80px;
+}
+
+#dim_score_machine{
+	margin-top: 15px;
+}
+/* #table_dim_score_teaher{ */
+#table_dim_score_machine{
+
+}
+/* #table_dim_score_teaher td{ */
+#table_dim_score_machine td{
+	padding: 2px;
+}
+.title_remark{
+	font-size: 14px;
+	font-weight:bold;
+}
+/* #global_remark_teacher{ */
+#global_remark_mac{
+	min-height: 100px;
+	padding: 5px;
+	margin: 5px 2px 2px 10px;
+}
+.thumbnail{
+	overflow: auto;
+}
+
+#sent_by_sent{
+	min-height: 80px;
+	overflow:auto;
+	padding: 5px;
+}
+
+.title_sbys{
+	text-align:center;
+	font-size:18px;
+	font-weight: bold;
+	font-family: Microsoft YaHei;
+	padding: 5px;
+	border: 1px solid #DDDDDD
+}
+
+.paragraph{
+	background-color: #e9f2f5;
+	min-height: 50px;
+	margin: 10px 2px 10px 2px;
+}
+.para-odd{
+	border: 1px solid #ace1f2;
+}
+.title-odd{
+	color: #6fcdec;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 0 5px 3px;
+	background-color: #ffffee;
+	border-bottom:  1px solid #ace1f2;
+}
+.para-even{
+	border: 1px solid #f6cf5a;
+}
+.title-even{
+	color: #e0aa35;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 0 5px 3px;
+	background-color: #ffffee;
+	border-bottom:  1px solid #f6cf5a;
+}
+.sentences{
+
+}
+.sentence{
+	min-height:24px;
+	/* min-width: 884px; */
+	border-bottom: 1px dashed #aaaaaa;
+	margin-bottom: 3px;
+	/* overflow: auto; */
+}
+.sentence:hover{
+	background-color: #FCF8E3;
+}
+.sent_left{
+	/*min-height: 24px;*/
+	/* margin-right: 8px; */
+	 /* width: 85%;  */
+	/* max-width: 750px; */
+	padding: 0 10px 0 10px;
+	/* float: left;  */
+}
+.sent_item{
+	padding: 2px 0 2px 10px;
+}
+
+.sent_item:hover{
+	/* background-color: #EDB954; */
+}
+.sent_mark{
+	color: #0023CC;
+	background-color: #f6cf5a;
+	border: 1px solid #edb954;
+    font-weight: bold;
+    line-height: 28px;
+    min-height: 20px;
+    text-align: center;
+    width: 4%;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.sent_text{
+	font-size: 14px;
+}
+
+.mark_check{
+	margin-top: 5px;
+	margin-left: 10px;
+	color: #28503e;
+	font-weight: bold;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+	float:right;
+}
+.mark_cancel{
+  margin-top: 7px;
+  margin-left: 10px;
+  color: #28503e;
+  font-weight: bold;
+  font-family: Microsoft YaHei;
+  cursor: pointer;
+  float:right;
+}
+.mark_modify{
+	margin-top: 7px;
+	margin-left: 10px;
+	color: #28503e;
+	font-weight: bold;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+	float:right;
+}
+.modify_by_sent{
+	padding: 2px;
+	/*margin-top: 10px;*/
+}
+.text_modify_by_sent{
+	background-color: #ffffff;
+	width: 694px;
+	padding: 3px 35px 3px 15px;
+	margin-bottom: 4px;
+	min-height: 45px;
+	border: 1px solid #ace1f2;
+	font-size: 14px;
+}
+.save_modify{
+	margin-top: -28px;
+	margin-right: 3px;
+	padding-right: 2px;
+}
+
+.sent_right{
+	min-height: 24px;
+	/* margin-left: 8px; */
+	/* margin-right: 10px; */
+	/* width: 48%; */
+	/* max-width: 600px; */
+	/* padding: 10px; */
+	/*margin-top: 10px;*/
+	/* float: right; */
+}
+.err_list{
+
+}
+.sent_right ol{
+	height: auto;
+}
+.sent_right li{
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+.sent_right li:hover{
+	/* background-color: #EDB954; */
+}
+.err_type{
+	cursor: pointer;
+	margin-right: 3px;
+	float: left;
+}
+.Chinglish{
+	color: blue;
+}
+.SpellingError{
+	color: #e89b48;
+}
+.OtherError{
+	color: #2adbc3;
+}
+.LearningTips{
+	color: green;
+}
+
+.err_note{
+	text-align: left;
+}
+.doubt_err{
+	color: gray;
+	cursor: pointer;
+	margin-left: 3px;
+	float: right;
+}
+
+.err-style{
+	color: #E23636;
+	font-weight: bold;
+}
+.tip-style{
+	color: #0066CC;
+	font-weight: bold;
+}
+.Error_count {
+			display:inline-block;
+			font-size: 14px;
+			color: white;
+			text-align:center;
+			border:none;
+			padding:2px 7px;
+			width:7px;
+			height:auto;
+			border-radius:50%;
+			margin: auto;
+		}
+td{
+	text-align: center
+}

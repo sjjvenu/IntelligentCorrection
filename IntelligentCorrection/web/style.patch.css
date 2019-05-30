@@ -1,0 +1,10 @@
+.popover.bottom .arrow {
+    border-bottom-color: rgba(111, 80, 36, .9);
+    border-top-width: 0;
+    left: 50%;
+    margin-left: -11px;
+    top: -11px;
+}
+.popover {
+    border: 1px solid rgba(111, 80, 36, .9); 
+}

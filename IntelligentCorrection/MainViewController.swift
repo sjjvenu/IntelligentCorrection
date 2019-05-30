@@ -26,6 +26,9 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         }
         set {
             _gradeID = newValue;
+            if _gradeID >= 3 && _gradeID <= 13 {
+                UserData.saveData(key: "grade", value: NSNumber.init(value: _gradeID), fileName: "userdata.plist");
+            }
             switch newValue {
             case 3:
                 self.gradeButton.setTitle("三年级", for: .normal);
@@ -254,6 +257,14 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
             make.height.equalTo(35);
         }
         correctButton.addTarget(self, action: #selector(MainViewController.intelligentCorrectClick(button:)), for: .touchUpInside);
+        
+        
+        if let gradeIDTemp = UserData.researchData(key: "grade", fileName: "userdata.plist") as? NSNumber {
+            self.gradeID = gradeIDTemp.intValue;
+        }
+        if self.gradeID < 3 || self.gradeID > 13 {
+            self.gradeID = 3;
+        }
     }
 
     func setNavButton() -> Void {
@@ -354,6 +365,14 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     }
     
     @objc func intelligentCorrectClick(button:UIButton) -> Void {
+        
+        let vc = EvaluateViewController.init();
+        vc.articleTitle = "";
+        vc.articleContent = self.contentView.text;
+        vc.gradeID = self.gradeID;
+        self.navigationController?.pushViewController(vc, animated: true);
+        return;
+        
         if let title = self.titleView.text,title.count > 0, self.contentView.text.count > 0
         {
             let vc = EvaluateViewController.init();

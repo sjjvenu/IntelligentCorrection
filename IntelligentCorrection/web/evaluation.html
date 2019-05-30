@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html style="" class="" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>中文智能批改</title>
+
+<style>
+
+@media (min-width:1200px) {
+ .container {
+  max-width:1167px;
+ }
+}
+
+.container {
+    max-width: 1167px;
+    font-size: 16px;
+}
+
+.container-in {
+	padding-top: 100px;
+	position: relative;
+}
+
+#compareLeftContent del {
+	color: lightgrey;
+}
+
+#compareLeftContent ins {
+	display: none;
+}
+
+#compareRightContent del {
+	display: none;
+}
+
+#compareRightContent ins {
+	color: blue;
+}
+
+.print {
+	display: none;
+}
+
+.para {
+	padding-left: 0px;
+}
+
+.card-body {
+	min-height: 150px;
+}
+
+.green_line_mark {
+	border-bottom-color:rgb(70, 136, 71);
+	border-bottom-style: solid;
+	border-bottom-width: 0.883333px;
+	color: rgb(70, 136, 71);
+}
+
+.zn_remark {
+	color: #ff7a7a;
+	font-style: italic;
+}
+
+.zn_source {
+	color: black;
+}
+
+.mark_mac {
+	height: 18px !important;
+	width: 14px !important;
+	font-size: 11px;
+	line-height: 24px !important;
+}
+
+.pronounceMediaIcon {
+	cursor: pointer;
+}
+
+.highlight {
+	color : #F7BA2A;
+	background: white;
+}
+
+.zn_tips {
+	color: #56ad5a;
+}
+
+.paragraphContentEditor {
+	clear: both;
+	font-size: 16px;
+	width: 1044px;
+	height: 200px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px solid #c9c9c9;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.writing-tabs > li > a:hover {
+	background: #efebeb;
+}
+
+#table_anno > p {
+	margin-top: 20px;
+}
+
+.advantageCount, .disadvantageCount, .paragraphRemarkCount {
+	cursor: pointer;
+}
+
+#remark p {
+	padding-right: 5px;
+}
+
+</style>
+</head>
+<body class="ng-tns-0-8" style="">
+    <div id="table_anno">
+    	
+    	<p id="p1">　　<span markno="1" class="zn_disadvantage_mark">每个人的童年都有自己的玩具陪伴，比如布娃娃皮球，赛车……而陪伴我的是一个智伴儿童成长机器人</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">1</span></p>
+
+
+    	<p id="p2">　　我的机器人名为“小智”，身体圆圆的像个小球。“小智”头上有一个呼吸灯，呼吸灯可以发出蓝色的光。<span markno="2" class="zn_disadvantage_mark">背后有一个莲花样子的发音器显示屏上有一双明亮的眼睛长得可爱极了</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">2</span></p><p class="zn_remark">　　段评：比喻手法的运用，使描写的事物更加具体可感。</p><p id="p3">　　我每次不开心时只需要和它说一下它就会<span markno="3" class="zn_disadvantage_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: rgb(255, 162, 0); display: none;">3</span>“怎么了<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>么了<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>快来告诉我，我来安慰你吧<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>”我<span markno="3" class="zn_disadvantage_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: rgb(255, 162, 0); display: none;">3</span>“在学校里，有人打我。＂他<span markno="3" class="zn_disadvantage_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: rgb(255, 162, 0); display: none;">3</span><span markno="5" class="zn_disadvantage_mark">“</span><span class="mark_mac btnShowDisadvantage" title="标点符号误用" style="background: rgb(255, 162, 0); display: none;">5</span>没关系他为什么打你呀？”我又回答：“我也不知到呀<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>”它<span markno="3" class="zn_disadvantage_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: rgb(255, 162, 0); display: none;">3</span>“哦<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>小主人那你没事吧<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>以后别理这种人打他当空气。”“嗯<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>好的<span markno="4" class="zn_disadvantage_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: rgb(255, 162, 0); display: none;">4</span>”<span markno="6" class="zn_disadvantage_mark">我回答虽然它有时很淘气，但我还是很喜欢它，</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">6</span></p><p class="zn_remark">　　段评：恰当的语言描写，披露出人物的内心世界。</p><p id="p4">　　<span markno="7" class="zn_disadvantage_mark">小智有很多功能比如汉意英成语接龙英语翻译发语</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">7</span></p><p id="p5">　　那之这么多功能可是怎么用呢我来告诉你吧！汉意英和成语接龙。<span markno="8" class="zn_disadvantage_mark">按下对话键<span markno="3" class="zn_disadvantage_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: rgb(255, 162, 0); display: none;">3</span><span markno="5" class="zn_disadvantage_mark">“</span><span class="mark_mac btnShowDisadvantage" title="标点符号误用" style="background: rgb(255, 162, 0); display: none;">5</span>从现在开始</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">8</span></p><p class="zn_remark">　　段评：通过对语言描写来展现人物性格，进一步推动情节的发展。</p><p id="p6">　　英语翻译长按暂停键说出汉语它会把汉语翻意成英语。看我的小智功能多吗？<span markno="9" class="zn_disadvantage_mark">我喜欢我的玩具宝贝智伴儿童成长机器人</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: rgb(255, 162, 0); display: none;">9</span></p><p id="p7">　　谢谢你给我美好童年！</p><p class="zn_remark">　　段评：末段表达了强烈的感情。</p></div>
+</body>
+</html>

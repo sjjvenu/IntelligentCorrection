@@ -8,6 +8,86 @@
 
 /* Begin PBXBuildFile section */
 		2F067D38229BDD1C00AE3390 /* EvaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */; };
+		2F067D4E229CDCFD00AE3390 /* UIBarButtonItem+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D44229CDCFD00AE3390 /* UIBarButtonItem+Extention.m */; };
+		2F067D4F229CDCFD00AE3390 /* NSString+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D45229CDCFD00AE3390 /* NSString+Extention.m */; };
+		2F067D50229CDCFD00AE3390 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D46229CDCFD00AE3390 /* UIView+Extension.m */; };
+		2F067D51229CDCFD00AE3390 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D47229CDCFD00AE3390 /* EditViewController.m */; };
+		2F067D52229CDCFD00AE3390 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D48229CDCFD00AE3390 /* MenuView.m */; };
+		2F067D53229CDCFD00AE3390 /* MenuViewBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D4B229CDCFD00AE3390 /* MenuViewBtn.m */; };
+		2F067D54229CDCFD00AE3390 /* FloodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F067D4C229CDCFD00AE3390 /* FloodView.m */; };
+		2F067D98229CE22000AE3390 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D56229CE22000AE3390 /* add.png */; };
+		2F067D99229CE22000AE3390 /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D57229CE22000AE3390 /* bootstrap.min.css */; };
+		2F067D9A229CE22000AE3390 /* iw.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D58229CE22000AE3390 /* iw.js */; };
+		2F067D9B229CE22000AE3390 /* mergely.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D59229CE22000AE3390 /* mergely.css */; };
+		2F067D9C229CE22000AE3390 /* html5shiv.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5A229CE22000AE3390 /* html5shiv.js */; };
+		2F067D9D229CE22000AE3390 /* evaluation.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5B229CE22000AE3390 /* evaluation.html */; };
+		2F067D9E229CE22000AE3390 /* writing_history_compare.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5C229CE22000AE3390 /* writing_history_compare.js */; };
+		2F067D9F229CE22000AE3390 /* jquery.raty.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5D229CE22000AE3390 /* jquery.raty.min.js */; };
+		2F067DA0229CE22000AE3390 /* moment.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5E229CE22000AE3390 /* moment.js */; };
+		2F067DA1229CE22000AE3390 /* jquery.qtip.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D5F229CE22000AE3390 /* jquery.qtip.min.js */; };
+		2F067DA2229CE22000AE3390 /* bootstrap-switch.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D60229CE22000AE3390 /* bootstrap-switch.css */; };
+		2F067DA3229CE22000AE3390 /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D61229CE22000AE3390 /* reset.css */; };
+		2F067DA4229CE22000AE3390 /* writing_canvas.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D62229CE22000AE3390 /* writing_canvas.js */; };
+		2F067DA5229CE22000AE3390 /* codemirror.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D63229CE22000AE3390 /* codemirror.js */; };
+		2F067DA6229CE22000AE3390 /* right1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D64229CE22000AE3390 /* right1.min.js */; };
+		2F067DA7229CE22000AE3390 /* styles.df34d132ef6e27e92345.bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D65229CE22000AE3390 /* styles.df34d132ef6e27e92345.bundle.css */; };
+		2F067DA8229CE22000AE3390 /* via7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D66229CE22000AE3390 /* via7.png */; };
+		2F067DA9229CE22000AE3390 /* jquery.qtip.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D67229CE22000AE3390 /* jquery.qtip.min.css */; };
+		2F067DAA229CE22000AE3390 /* layui.all.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D68229CE22000AE3390 /* layui.all.js */; };
+		2F067DAB229CE22000AE3390 /* jquery.toast.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D69229CE22000AE3390 /* jquery.toast.min.css */; };
+		2F067DAC229CE22000AE3390 /* code.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6A229CE22000AE3390 /* code.css */; };
+		2F067DAD229CE22000AE3390 /* jquery-1.9.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6B229CE22000AE3390 /* jquery-1.9.1.min.js */; };
+		2F067DAE229CE22000AE3390 /* teacher_anno.str_mb.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6C229CE22000AE3390 /* teacher_anno.str_mb.js */; };
+		2F067DAF229CE22000AE3390 /* json2.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6D229CE22000AE3390 /* json2.js */; };
+		2F067DB0229CE22000AE3390 /* writing.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6E229CE22000AE3390 /* writing.js */; };
+		2F067DB1229CE22000AE3390 /* writing_evaluation.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D6F229CE22000AE3390 /* writing_evaluation.css */; };
+		2F067DB2229CE22000AE3390 /* check_machine_review.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D70229CE22000AE3390 /* check_machine_review.css */; };
+		2F067DB3229CE22000AE3390 /* header.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D71229CE22000AE3390 /* header.js */; };
+		2F067DB4229CE22000AE3390 /* computer-review-list.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D72229CE22000AE3390 /* computer-review-list.css */; };
+		2F067DB5229CE22000AE3390 /* codemirror.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D73229CE22000AE3390 /* codemirror.css */; };
+		2F067DB6229CE22000AE3390 /* writing_evaluation_tab.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D74229CE22000AE3390 /* writing_evaluation_tab.html */; };
+		2F067DB7229CE22000AE3390 /* annotation.common.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D75229CE22000AE3390 /* annotation.common.min.js */; };
+		2F067DB8229CE22000AE3390 /* laydate.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D76229CE22000AE3390 /* laydate.css */; };
+		2F067DB9229CE22000AE3390 /* computer-review-list.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D77229CE22000AE3390 /* computer-review-list.js */; };
+		2F067DBA229CE22000AE3390 /* enhances.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D78229CE22000AE3390 /* enhances.html */; };
+		2F067DBB229CE22000AE3390 /* writing_evaluation_tab.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D79229CE22000AE3390 /* writing_evaluation_tab.js */; };
+		2F067DBC229CE22000AE3390 /* peek_text.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7A229CE22000AE3390 /* peek_text.js */; };
+		2F067DBD229CE22000AE3390 /* bootstrap-responsive.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7B229CE22000AE3390 /* bootstrap-responsive.min.css */; };
+		2F067DBE229CE22000AE3390 /* bootstrap.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7C229CE22000AE3390 /* bootstrap.min.js */; };
+		2F067DBF229CE22000AE3390 /* add_1_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7D229CE22000AE3390 /* add_1_bg.png */; };
+		2F067DC0229CE22000AE3390 /* layui.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7E229CE22000AE3390 /* layui.css */; };
+		2F067DC1229CE22000AE3390 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D7F229CE22000AE3390 /* logo.png */; };
+		2F067DC2229CE22000AE3390 /* common.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D80229CE22000AE3390 /* common.min.js */; };
+		2F067DC3229CE22000AE3390 /* radialIndicator.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D81229CE22000AE3390 /* radialIndicator.js */; };
+		2F067DC4229CE22000AE3390 /* loading.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D82229CE22000AE3390 /* loading.css */; };
+		2F067DC5229CE22000AE3390 /* stu_review.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D83229CE22000AE3390 /* stu_review.css */; };
+		2F067DC6229CE22000AE3390 /* md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D84229CE22000AE3390 /* md5.js */; };
+		2F067DC7229CE22000AE3390 /* diff.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D85229CE22000AE3390 /* diff.min.js */; };
+		2F067DC8229CE22000AE3390 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D86229CE22000AE3390 /* style.css */; };
+		2F067DC9229CE22000AE3390 /* edit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D87229CE22000AE3390 /* edit.svg */; };
+		2F067DCA229CE22000AE3390 /* site_common.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D88229CE22000AE3390 /* site_common.js */; };
+		2F067DCB229CE22000AE3390 /* jquery.bootstrap.teninedialog.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D89229CE22000AE3390 /* jquery.bootstrap.teninedialog.js */; };
+		2F067DCC229CE22000AE3390 /* annotation.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8A229CE22000AE3390 /* annotation.css */; };
+		2F067DCD229CE22000AE3390 /* eye.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8B229CE22000AE3390 /* eye.svg */; };
+		2F067DCE229CE22000AE3390 /* layer.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8C229CE22000AE3390 /* layer.css */; };
+		2F067DCF229CE22000AE3390 /* publicSetup.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8D229CE22000AE3390 /* publicSetup.js */; };
+		2F067DD0229CE22000AE3390 /* commonMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8E229CE22000AE3390 /* commonMethod.js */; };
+		2F067DD1229CE22000AE3390 /* suggestion.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D8F229CE22000AE3390 /* suggestion.html */; };
+		2F067DD2229CE22000AE3390 /* style-responsive.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D90229CE22000AE3390 /* style-responsive.css */; };
+		2F067DD3229CE22000AE3390 /* popper.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D91229CE22000AE3390 /* popper.min.js */; };
+		2F067DD4229CE22000AE3390 /* arr-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D92229CE22000AE3390 /* arr-down.png */; };
+		2F067DD5229CE22000AE3390 /* jquery.placeholder.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D93229CE22000AE3390 /* jquery.placeholder.js */; };
+		2F067DD6229CE22000AE3390 /* mombobox.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D94229CE22000AE3390 /* mombobox.css */; };
+		2F067DD7229CE22000AE3390 /* diff.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D95229CE22000AE3390 /* diff.js */; };
+		2F067DD8229CE22000AE3390 /* jquery.toast.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D96229CE22000AE3390 /* jquery.toast.min.js */; };
+		2F067DD9229CE22000AE3390 /* style.patch.css in Resources */ = {isa = PBXBuildFile; fileRef = 2F067D97229CE22000AE3390 /* style.patch.css */; };
+		2F067DDB229D054800AE3390 /* site_common(1).js in Resources */ = {isa = PBXBuildFile; fileRef = 2F067DDA229D054800AE3390 /* site_common(1).js */; };
+		2F067DDD229D07AD00AE3390 /* EnhancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DDC229D07AD00AE3390 /* EnhancesViewController.swift */; };
+		2F067DDF229D232200AE3390 /* RemarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DDE229D232200AE3390 /* RemarkTableViewCell.swift */; };
+		2F067DE1229D30FE00AE3390 /* common.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F067DE0229D30FE00AE3390 /* common.html */; };
+		2F067DE3229D4C0400AE3390 /* OriginEvaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */; };
+		2F067DE5229D56CD00AE3390 /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */; };
+		2F067DE7229E2A3300AE3390 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067DE6229E2A3300AE3390 /* UserData.swift */; };
 		2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */; };
 		2FAB9EE2229B702D00BACC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE1229B702D00BACC77 /* Assets.xcassets */; };
 		2FAB9EE5229B702D00BACC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */; };
@@ -18,6 +98,95 @@
 /* Begin PBXFileReference section */
 		25D18218D00FF78D7F7B75ED /* Pods-IntelligentCorrection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelligentCorrection.release.xcconfig"; path = "Target Support Files/Pods-IntelligentCorrection/Pods-IntelligentCorrection.release.xcconfig"; sourceTree = "<group>"; };
 		2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateViewController.swift; sourceTree = "<group>"; };
+		2F067D39229CDCDB00AE3390 /* IntelligentCorrection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntelligentCorrection-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F067D3E229CDCFD00AE3390 /* ZTPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTPage.h; sourceTree = "<group>"; };
+		2F067D3F229CDCFD00AE3390 /* MenuViewBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewBtn.h; sourceTree = "<group>"; };
+		2F067D41229CDCFD00AE3390 /* UIBarButtonItem+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extention.h"; sourceTree = "<group>"; };
+		2F067D42229CDCFD00AE3390 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2F067D43229CDCFD00AE3390 /* NSString+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extention.h"; sourceTree = "<group>"; };
+		2F067D44229CDCFD00AE3390 /* UIBarButtonItem+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extention.m"; sourceTree = "<group>"; };
+		2F067D45229CDCFD00AE3390 /* NSString+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extention.m"; sourceTree = "<group>"; };
+		2F067D46229CDCFD00AE3390 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2F067D47229CDCFD00AE3390 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		2F067D48229CDCFD00AE3390 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		2F067D49229CDCFD00AE3390 /* FloodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloodView.h; sourceTree = "<group>"; };
+		2F067D4A229CDCFD00AE3390 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		2F067D4B229CDCFD00AE3390 /* MenuViewBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewBtn.m; sourceTree = "<group>"; };
+		2F067D4C229CDCFD00AE3390 /* FloodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloodView.m; sourceTree = "<group>"; };
+		2F067D4D229CDCFD00AE3390 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		2F067D56229CE22000AE3390 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		2F067D57229CE22000AE3390 /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
+		2F067D58229CE22000AE3390 /* iw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = iw.js; sourceTree = "<group>"; };
+		2F067D59229CE22000AE3390 /* mergely.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mergely.css; sourceTree = "<group>"; };
+		2F067D5A229CE22000AE3390 /* html5shiv.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html5shiv.js; sourceTree = "<group>"; };
+		2F067D5B229CE22000AE3390 /* evaluation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = evaluation.html; sourceTree = "<group>"; };
+		2F067D5C229CE22000AE3390 /* writing_history_compare.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = writing_history_compare.js; sourceTree = "<group>"; };
+		2F067D5D229CE22000AE3390 /* jquery.raty.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.raty.min.js; sourceTree = "<group>"; };
+		2F067D5E229CE22000AE3390 /* moment.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = moment.js; sourceTree = "<group>"; };
+		2F067D5F229CE22000AE3390 /* jquery.qtip.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.qtip.min.js; sourceTree = "<group>"; };
+		2F067D60229CE22000AE3390 /* bootstrap-switch.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bootstrap-switch.css"; sourceTree = "<group>"; };
+		2F067D61229CE22000AE3390 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
+		2F067D62229CE22000AE3390 /* writing_canvas.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = writing_canvas.js; sourceTree = "<group>"; };
+		2F067D63229CE22000AE3390 /* codemirror.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = codemirror.js; sourceTree = "<group>"; };
+		2F067D64229CE22000AE3390 /* right1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = right1.min.js; sourceTree = "<group>"; };
+		2F067D65229CE22000AE3390 /* styles.df34d132ef6e27e92345.bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.df34d132ef6e27e92345.bundle.css; sourceTree = "<group>"; };
+		2F067D66229CE22000AE3390 /* via7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = via7.png; sourceTree = "<group>"; };
+		2F067D67229CE22000AE3390 /* jquery.qtip.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.qtip.min.css; sourceTree = "<group>"; };
+		2F067D68229CE22000AE3390 /* layui.all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = layui.all.js; sourceTree = "<group>"; };
+		2F067D69229CE22000AE3390 /* jquery.toast.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.toast.min.css; sourceTree = "<group>"; };
+		2F067D6A229CE22000AE3390 /* code.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = code.css; sourceTree = "<group>"; };
+		2F067D6B229CE22000AE3390 /* jquery-1.9.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.1.min.js"; sourceTree = "<group>"; };
+		2F067D6C229CE22000AE3390 /* teacher_anno.str_mb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = teacher_anno.str_mb.js; sourceTree = "<group>"; };
+		2F067D6D229CE22000AE3390 /* json2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = json2.js; sourceTree = "<group>"; };
+		2F067D6E229CE22000AE3390 /* writing.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = writing.js; sourceTree = "<group>"; };
+		2F067D6F229CE22000AE3390 /* writing_evaluation.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = writing_evaluation.css; sourceTree = "<group>"; };
+		2F067D70229CE22000AE3390 /* check_machine_review.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = check_machine_review.css; sourceTree = "<group>"; };
+		2F067D71229CE22000AE3390 /* header.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = header.js; sourceTree = "<group>"; };
+		2F067D72229CE22000AE3390 /* computer-review-list.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "computer-review-list.css"; sourceTree = "<group>"; };
+		2F067D73229CE22000AE3390 /* codemirror.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = codemirror.css; sourceTree = "<group>"; };
+		2F067D74229CE22000AE3390 /* writing_evaluation_tab.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = writing_evaluation_tab.html; sourceTree = "<group>"; };
+		2F067D75229CE22000AE3390 /* annotation.common.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = annotation.common.min.js; sourceTree = "<group>"; };
+		2F067D76229CE22000AE3390 /* laydate.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = laydate.css; sourceTree = "<group>"; };
+		2F067D77229CE22000AE3390 /* computer-review-list.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "computer-review-list.js"; sourceTree = "<group>"; };
+		2F067D78229CE22000AE3390 /* enhances.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = enhances.html; sourceTree = "<group>"; };
+		2F067D79229CE22000AE3390 /* writing_evaluation_tab.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = writing_evaluation_tab.js; sourceTree = "<group>"; };
+		2F067D7A229CE22000AE3390 /* peek_text.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = peek_text.js; sourceTree = "<group>"; };
+		2F067D7B229CE22000AE3390 /* bootstrap-responsive.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bootstrap-responsive.min.css"; sourceTree = "<group>"; };
+		2F067D7C229CE22000AE3390 /* bootstrap.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bootstrap.min.js; sourceTree = "<group>"; };
+		2F067D7D229CE22000AE3390 /* add_1_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_1_bg.png; sourceTree = "<group>"; };
+		2F067D7E229CE22000AE3390 /* layui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = layui.css; sourceTree = "<group>"; };
+		2F067D7F229CE22000AE3390 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		2F067D80229CE22000AE3390 /* common.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.min.js; sourceTree = "<group>"; };
+		2F067D81229CE22000AE3390 /* radialIndicator.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = radialIndicator.js; sourceTree = "<group>"; };
+		2F067D82229CE22000AE3390 /* loading.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = loading.css; sourceTree = "<group>"; };
+		2F067D83229CE22000AE3390 /* stu_review.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stu_review.css; sourceTree = "<group>"; };
+		2F067D84229CE22000AE3390 /* md5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = md5.js; sourceTree = "<group>"; };
+		2F067D85229CE22000AE3390 /* diff.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = diff.min.js; sourceTree = "<group>"; };
+		2F067D86229CE22000AE3390 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		2F067D87229CE22000AE3390 /* edit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = edit.svg; sourceTree = "<group>"; };
+		2F067D88229CE22000AE3390 /* site_common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = site_common.js; sourceTree = "<group>"; };
+		2F067D89229CE22000AE3390 /* jquery.bootstrap.teninedialog.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.bootstrap.teninedialog.js; sourceTree = "<group>"; };
+		2F067D8A229CE22000AE3390 /* annotation.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = annotation.css; sourceTree = "<group>"; };
+		2F067D8B229CE22000AE3390 /* eye.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eye.svg; sourceTree = "<group>"; };
+		2F067D8C229CE22000AE3390 /* layer.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = layer.css; sourceTree = "<group>"; };
+		2F067D8D229CE22000AE3390 /* publicSetup.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = publicSetup.js; sourceTree = "<group>"; };
+		2F067D8E229CE22000AE3390 /* commonMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = commonMethod.js; sourceTree = "<group>"; };
+		2F067D8F229CE22000AE3390 /* suggestion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = suggestion.html; sourceTree = "<group>"; };
+		2F067D90229CE22000AE3390 /* style-responsive.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "style-responsive.css"; sourceTree = "<group>"; };
+		2F067D91229CE22000AE3390 /* popper.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = popper.min.js; sourceTree = "<group>"; };
+		2F067D92229CE22000AE3390 /* arr-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arr-down.png"; sourceTree = "<group>"; };
+		2F067D93229CE22000AE3390 /* jquery.placeholder.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.placeholder.js; sourceTree = "<group>"; };
+		2F067D94229CE22000AE3390 /* mombobox.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mombobox.css; sourceTree = "<group>"; };
+		2F067D95229CE22000AE3390 /* diff.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = diff.js; sourceTree = "<group>"; };
+		2F067D96229CE22000AE3390 /* jquery.toast.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.toast.min.js; sourceTree = "<group>"; };
+		2F067D97229CE22000AE3390 /* style.patch.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.patch.css; sourceTree = "<group>"; };
+		2F067DDA229D054800AE3390 /* site_common(1).js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "site_common(1).js"; sourceTree = "<group>"; };
+		2F067DDC229D07AD00AE3390 /* EnhancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancesViewController.swift; sourceTree = "<group>"; };
+		2F067DDE229D232200AE3390 /* RemarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemarkTableViewCell.swift; sourceTree = "<group>"; };
+		2F067DE0229D30FE00AE3390 /* common.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = common.html; sourceTree = "<group>"; };
+		2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginEvaViewController.swift; sourceTree = "<group>"; };
+		2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		2F067DE6229E2A3300AE3390 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2FAB9ED7229B702C00BACC77 /* IntelligentCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FAB9EE1229B702D00BACC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +209,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F067D3D229CDCFD00AE3390 /* ZTpage */ = {
+			isa = PBXGroup;
+			children = (
+				2F067D3E229CDCFD00AE3390 /* ZTPage.h */,
+				2F067D3F229CDCFD00AE3390 /* MenuViewBtn.h */,
+				2F067D40229CDCFD00AE3390 /* Category */,
+				2F067D47229CDCFD00AE3390 /* EditViewController.m */,
+				2F067D48229CDCFD00AE3390 /* MenuView.m */,
+				2F067D49229CDCFD00AE3390 /* FloodView.h */,
+				2F067D4A229CDCFD00AE3390 /* EditViewController.h */,
+				2F067D4B229CDCFD00AE3390 /* MenuViewBtn.m */,
+				2F067D4C229CDCFD00AE3390 /* FloodView.m */,
+				2F067D4D229CDCFD00AE3390 /* MenuView.h */,
+			);
+			path = ZTpage;
+			sourceTree = "<group>";
+		};
+		2F067D40229CDCFD00AE3390 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2F067D41229CDCFD00AE3390 /* UIBarButtonItem+Extention.h */,
+				2F067D42229CDCFD00AE3390 /* UIView+Extension.h */,
+				2F067D43229CDCFD00AE3390 /* NSString+Extention.h */,
+				2F067D44229CDCFD00AE3390 /* UIBarButtonItem+Extention.m */,
+				2F067D45229CDCFD00AE3390 /* NSString+Extention.m */,
+				2F067D46229CDCFD00AE3390 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2F067D55229CE22000AE3390 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				2F067DE0229D30FE00AE3390 /* common.html */,
+				2F067DDA229D054800AE3390 /* site_common(1).js */,
+				2F067D56229CE22000AE3390 /* add.png */,
+				2F067D57229CE22000AE3390 /* bootstrap.min.css */,
+				2F067D58229CE22000AE3390 /* iw.js */,
+				2F067D59229CE22000AE3390 /* mergely.css */,
+				2F067D5A229CE22000AE3390 /* html5shiv.js */,
+				2F067D5B229CE22000AE3390 /* evaluation.html */,
+				2F067D5C229CE22000AE3390 /* writing_history_compare.js */,
+				2F067D5D229CE22000AE3390 /* jquery.raty.min.js */,
+				2F067D5E229CE22000AE3390 /* moment.js */,
+				2F067D5F229CE22000AE3390 /* jquery.qtip.min.js */,
+				2F067D60229CE22000AE3390 /* bootstrap-switch.css */,
+				2F067D61229CE22000AE3390 /* reset.css */,
+				2F067D62229CE22000AE3390 /* writing_canvas.js */,
+				2F067D63229CE22000AE3390 /* codemirror.js */,
+				2F067D64229CE22000AE3390 /* right1.min.js */,
+				2F067D65229CE22000AE3390 /* styles.df34d132ef6e27e92345.bundle.css */,
+				2F067D66229CE22000AE3390 /* via7.png */,
+				2F067D67229CE22000AE3390 /* jquery.qtip.min.css */,
+				2F067D68229CE22000AE3390 /* layui.all.js */,
+				2F067D69229CE22000AE3390 /* jquery.toast.min.css */,
+				2F067D6A229CE22000AE3390 /* code.css */,
+				2F067D6B229CE22000AE3390 /* jquery-1.9.1.min.js */,
+				2F067D6C229CE22000AE3390 /* teacher_anno.str_mb.js */,
+				2F067D6D229CE22000AE3390 /* json2.js */,
+				2F067D6E229CE22000AE3390 /* writing.js */,
+				2F067D6F229CE22000AE3390 /* writing_evaluation.css */,
+				2F067D70229CE22000AE3390 /* check_machine_review.css */,
+				2F067D71229CE22000AE3390 /* header.js */,
+				2F067D72229CE22000AE3390 /* computer-review-list.css */,
+				2F067D73229CE22000AE3390 /* codemirror.css */,
+				2F067D74229CE22000AE3390 /* writing_evaluation_tab.html */,
+				2F067D75229CE22000AE3390 /* annotation.common.min.js */,
+				2F067D76229CE22000AE3390 /* laydate.css */,
+				2F067D77229CE22000AE3390 /* computer-review-list.js */,
+				2F067D78229CE22000AE3390 /* enhances.html */,
+				2F067D79229CE22000AE3390 /* writing_evaluation_tab.js */,
+				2F067D7A229CE22000AE3390 /* peek_text.js */,
+				2F067D7B229CE22000AE3390 /* bootstrap-responsive.min.css */,
+				2F067D7C229CE22000AE3390 /* bootstrap.min.js */,
+				2F067D7D229CE22000AE3390 /* add_1_bg.png */,
+				2F067D7E229CE22000AE3390 /* layui.css */,
+				2F067D7F229CE22000AE3390 /* logo.png */,
+				2F067D80229CE22000AE3390 /* common.min.js */,
+				2F067D81229CE22000AE3390 /* radialIndicator.js */,
+				2F067D82229CE22000AE3390 /* loading.css */,
+				2F067D83229CE22000AE3390 /* stu_review.css */,
+				2F067D84229CE22000AE3390 /* md5.js */,
+				2F067D85229CE22000AE3390 /* diff.min.js */,
+				2F067D86229CE22000AE3390 /* style.css */,
+				2F067D87229CE22000AE3390 /* edit.svg */,
+				2F067D88229CE22000AE3390 /* site_common.js */,
+				2F067D89229CE22000AE3390 /* jquery.bootstrap.teninedialog.js */,
+				2F067D8A229CE22000AE3390 /* annotation.css */,
+				2F067D8B229CE22000AE3390 /* eye.svg */,
+				2F067D8C229CE22000AE3390 /* layer.css */,
+				2F067D8D229CE22000AE3390 /* publicSetup.js */,
+				2F067D8E229CE22000AE3390 /* commonMethod.js */,
+				2F067D8F229CE22000AE3390 /* suggestion.html */,
+				2F067D90229CE22000AE3390 /* style-responsive.css */,
+				2F067D91229CE22000AE3390 /* popper.min.js */,
+				2F067D92229CE22000AE3390 /* arr-down.png */,
+				2F067D93229CE22000AE3390 /* jquery.placeholder.js */,
+				2F067D94229CE22000AE3390 /* mombobox.css */,
+				2F067D95229CE22000AE3390 /* diff.js */,
+				2F067D96229CE22000AE3390 /* jquery.toast.min.js */,
+				2F067D97229CE22000AE3390 /* style.patch.css */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 		2FAB9ECE229B702C00BACC77 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +335,20 @@
 		2FAB9ED9229B702C00BACC77 /* IntelligentCorrection */ = {
 			isa = PBXGroup;
 			children = (
+				2F067D55229CE22000AE3390 /* web */,
+				2F067D3D229CDCFD00AE3390 /* ZTpage */,
 				2FAB9EDA229B702C00BACC77 /* AppDelegate.swift */,
 				2FAB9EEC229B737200BACC77 /* MainViewController.swift */,
 				2F067D37229BDD1C00AE3390 /* EvaluateViewController.swift */,
+				2F067DDE229D232200AE3390 /* RemarkTableViewCell.swift */,
+				2F067DDC229D07AD00AE3390 /* EnhancesViewController.swift */,
+				2F067DE2229D4C0400AE3390 /* OriginEvaViewController.swift */,
+				2F067DE4229D56CD00AE3390 /* SuggestionViewController.swift */,
+				2F067DE6229E2A3300AE3390 /* UserData.swift */,
 				2FAB9EE1229B702D00BACC77 /* Assets.xcassets */,
 				2FAB9EE3229B702D00BACC77 /* LaunchScreen.storyboard */,
 				2FAB9EE6229B702D00BACC77 /* Info.plist */,
+				2F067D39229CDCDB00AE3390 /* IntelligentCorrection-Bridging-Header.h */,
 			);
 			path = IntelligentCorrection;
 			sourceTree = "<group>";
@@ -122,6 +404,7 @@
 				TargetAttributes = {
 					2FAB9ED6229B702C00BACC77 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -148,8 +431,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F067DA4229CE22000AE3390 /* writing_canvas.js in Resources */,
+				2F067DB7229CE22000AE3390 /* annotation.common.min.js in Resources */,
+				2F067DB8229CE22000AE3390 /* laydate.css in Resources */,
+				2F067D99229CE22000AE3390 /* bootstrap.min.css in Resources */,
+				2F067DAA229CE22000AE3390 /* layui.all.js in Resources */,
+				2F067D98229CE22000AE3390 /* add.png in Resources */,
+				2F067DB1229CE22000AE3390 /* writing_evaluation.css in Resources */,
+				2F067DC3229CE22000AE3390 /* radialIndicator.js in Resources */,
+				2F067DC4229CE22000AE3390 /* loading.css in Resources */,
+				2F067DAD229CE22000AE3390 /* jquery-1.9.1.min.js in Resources */,
+				2F067DD8229CE22000AE3390 /* jquery.toast.min.js in Resources */,
+				2F067D9E229CE22000AE3390 /* writing_history_compare.js in Resources */,
+				2F067DB4229CE22000AE3390 /* computer-review-list.css in Resources */,
+				2F067DBE229CE22000AE3390 /* bootstrap.min.js in Resources */,
+				2F067DC8229CE22000AE3390 /* style.css in Resources */,
+				2F067DCB229CE22000AE3390 /* jquery.bootstrap.teninedialog.js in Resources */,
+				2F067DD2229CE22000AE3390 /* style-responsive.css in Resources */,
+				2F067DD3229CE22000AE3390 /* popper.min.js in Resources */,
+				2F067D9D229CE22000AE3390 /* evaluation.html in Resources */,
+				2F067DB6229CE22000AE3390 /* writing_evaluation_tab.html in Resources */,
+				2F067D9C229CE22000AE3390 /* html5shiv.js in Resources */,
+				2F067DA3229CE22000AE3390 /* reset.css in Resources */,
+				2F067DD7229CE22000AE3390 /* diff.js in Resources */,
+				2F067DA7229CE22000AE3390 /* styles.df34d132ef6e27e92345.bundle.css in Resources */,
+				2F067DA0229CE22000AE3390 /* moment.js in Resources */,
+				2F067DC9229CE22000AE3390 /* edit.svg in Resources */,
+				2F067DB0229CE22000AE3390 /* writing.js in Resources */,
+				2F067DCE229CE22000AE3390 /* layer.css in Resources */,
+				2F067DBC229CE22000AE3390 /* peek_text.js in Resources */,
+				2F067DBA229CE22000AE3390 /* enhances.html in Resources */,
+				2F067DC2229CE22000AE3390 /* common.min.js in Resources */,
+				2F067DAC229CE22000AE3390 /* code.css in Resources */,
+				2F067DD6229CE22000AE3390 /* mombobox.css in Resources */,
+				2F067DD9229CE22000AE3390 /* style.patch.css in Resources */,
+				2F067DA6229CE22000AE3390 /* right1.min.js in Resources */,
+				2F067DA2229CE22000AE3390 /* bootstrap-switch.css in Resources */,
+				2F067DCC229CE22000AE3390 /* annotation.css in Resources */,
 				2FAB9EE5229B702D00BACC77 /* LaunchScreen.storyboard in Resources */,
+				2F067DC1229CE22000AE3390 /* logo.png in Resources */,
+				2F067DA9229CE22000AE3390 /* jquery.qtip.min.css in Resources */,
+				2F067DA8229CE22000AE3390 /* via7.png in Resources */,
+				2F067DB3229CE22000AE3390 /* header.js in Resources */,
+				2F067DC7229CE22000AE3390 /* diff.min.js in Resources */,
+				2F067D9B229CE22000AE3390 /* mergely.css in Resources */,
+				2F067D9F229CE22000AE3390 /* jquery.raty.min.js in Resources */,
+				2F067DAF229CE22000AE3390 /* json2.js in Resources */,
+				2F067DC5229CE22000AE3390 /* stu_review.css in Resources */,
 				2FAB9EE2229B702D00BACC77 /* Assets.xcassets in Resources */,
+				2F067D9A229CE22000AE3390 /* iw.js in Resources */,
+				2F067DE1229D30FE00AE3390 /* common.html in Resources */,
+				2F067DB9229CE22000AE3390 /* computer-review-list.js in Resources */,
+				2F067DD4229CE22000AE3390 /* arr-down.png in Resources */,
+				2F067DA5229CE22000AE3390 /* codemirror.js in Resources */,
+				2F067DB5229CE22000AE3390 /* codemirror.css in Resources */,
+				2F067DD5229CE22000AE3390 /* jquery.placeholder.js in Resources */,
+				2F067DAB229CE22000AE3390 /* jquery.toast.min.css in Resources */,
+				2F067DCF229CE22000AE3390 /* publicSetup.js in Resources */,
+				2F067DD0229CE22000AE3390 /* commonMethod.js in Resources */,
+				2F067DC0229CE22000AE3390 /* layui.css in Resources */,
+				2F067DAE229CE22000AE3390 /* teacher_anno.str_mb.js in Resources */,
+				2F067DCD229CE22000AE3390 /* eye.svg in Resources */,
+				2F067DA1229CE22000AE3390 /* jquery.qtip.min.js in Resources */,
+				2F067DBF229CE22000AE3390 /* add_1_bg.png in Resources */,
+				2F067DB2229CE22000AE3390 /* check_machine_review.css in Resources */,
+				2F067DCA229CE22000AE3390 /* site_common.js in Resources */,
+				2F067DC6229CE22000AE3390 /* md5.js in Resources */,
+				2F067DDB229D054800AE3390 /* site_common(1).js in Resources */,
+				2F067DBD229CE22000AE3390 /* bootstrap-responsive.min.css in Resources */,
+				2F067DD1229CE22000AE3390 /* suggestion.html in Resources */,
+				2F067DBB229CE22000AE3390 /* writing_evaluation_tab.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +518,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-IntelligentCorrection/Pods-IntelligentCorrection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -180,6 +532,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -221,7 +574,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F067DE5229D56CD00AE3390 /* SuggestionViewController.swift in Sources */,
+				2F067D50229CDCFD00AE3390 /* UIView+Extension.m in Sources */,
+				2F067DDF229D232200AE3390 /* RemarkTableViewCell.swift in Sources */,
+				2F067DE7229E2A3300AE3390 /* UserData.swift in Sources */,
+				2F067DE3229D4C0400AE3390 /* OriginEvaViewController.swift in Sources */,
+				2F067D4F229CDCFD00AE3390 /* NSString+Extention.m in Sources */,
 				2FAB9EDB229B702C00BACC77 /* AppDelegate.swift in Sources */,
+				2F067DDD229D07AD00AE3390 /* EnhancesViewController.swift in Sources */,
+				2F067D51229CDCFD00AE3390 /* EditViewController.m in Sources */,
+				2F067D53229CDCFD00AE3390 /* MenuViewBtn.m in Sources */,
+				2F067D54229CDCFD00AE3390 /* FloodView.m in Sources */,
+				2F067D4E229CDCFD00AE3390 /* UIBarButtonItem+Extention.m in Sources */,
+				2F067D52229CDCFD00AE3390 /* MenuView.m in Sources */,
 				2F067D38229BDD1C00AE3390 /* EvaluateViewController.swift in Sources */,
 				2FAB9EED229B737200BACC77 /* MainViewController.swift in Sources */,
 			);
@@ -362,18 +727,21 @@
 			baseConfigurationReference = EE742CAEFC264C3071DCCA5B /* Pods-IntelligentCorrection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8JG9Q5SKA;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LRY68UN9JJ;
 				INFOPLIST_FILE = IntelligentCorrection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrecion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "inteligent correction distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntelligentCorrection/IntelligentCorrection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,18 +752,20 @@
 			baseConfigurationReference = 25D18218D00FF78D7F7B75ED /* Pods-IntelligentCorrection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8JG9Q5SKA;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LRY68UN9JJ;
 				INFOPLIST_FILE = IntelligentCorrection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrecion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjjvenu.intelligentcorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "inteligent correction distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntelligentCorrection/IntelligentCorrection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

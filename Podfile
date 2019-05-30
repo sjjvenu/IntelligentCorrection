@@ -6,6 +6,7 @@ def pods
     pod 'SnapKit'
     pod 'MJRefresh'
     pod 'SDWebImage'
+    pod 'KVOController'
     pod 'Alamofire'
     pod 'Toast-Swift'
     pod 'WXImageCompress', '~> 0.1.1'

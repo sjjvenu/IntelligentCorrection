@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://www.znpigai.com/pv1/writing/writing_evaluation_tab.html?_1558956669623 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="shortcut icon" href="https://www.znpigai.com/newportal/assets/img/icon.png">
+<!--
+<script src="/newportal/assets/review/js/mergely.js"></script>
+ -->
+<script src="./html5shiv.js"></script>
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Cache" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link href="./style.css" rel="stylesheet">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link href="./bootstrap-responsive.min.css" rel="stylesheet">
+<link href="./style-responsive.css" rel="stylesheet">
+<link href="./jquery.qtip.min.css" rel="stylesheet">
+<link href="./annotation.css" rel="stylesheet">
+<link rel="stylesheet" href="./jquery.toast.min.css">
+<script type="text/javascript" src="./site_common(1).js"></script>
+<script type="text/javascript" src="./writing_canvas.js"></script>
+<style>
+.modal-backdrop, .modal-backdrop.fade.in {
+	opacity: .1;
+	filter: alpha(opacity = 80);
+}
+
+.modal.fade.in {
+	top: 5%;
+}
+
+.modal-body {
+	max-height: 450px;
+	padding: 10px;
+}
+
+#paragraphMarkEntityList span.mark_mac {
+
+    color: #468847;
+    cursor: pointer;
+    background: #20A0FF;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+    padding: 1px 5.7px;
+	height: 18px !important;
+	width: 14px !important;
+	font-size: 11px;
+	line-height: 24px !important;
+
+}
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="./layui.css">
+<link href="./mombobox.css" rel="stylesheet">
+<link href="./bootstrap-switch.css" rel="stylesheet">
+<link href="./style.patch.css" rel="stylesheet">
+<link href="./stu_review.css" rel="stylesheet">
+<link href="./check_machine_review.css" rel="stylesheet">
+<link href="./codemirror.css" rel="stylesheet">
+<link href="./mergely.css" rel="stylesheet">
+<!-- new -->
+<link href="./computer-review-list.css" rel="stylesheet">
+
+<script src="./popper.min.js"></script>
+<script type="text/javascript" src="./bootstrap.min.js"></script>
+<script type="text/javascript" src="./json2.js"></script>
+<script type="text/javascript" src="./md5.js"></script>
+<script type="text/javascript" src="./iw.js"></script>
+<script type="text/javascript" src="./moment.js"></script>
+<script type="text/javascript" src="./publicSetup.js"></script>
+<script type="text/javascript" src="./header.js"></script>
+<script type="text/javascript" src="./jquery.qtip.min.js"></script>
+<script type="text/javascript" src="./radialIndicator.js"></script>
+<script type="text/javascript" src="./layui.all.js"></script><link id="layuicss-laydate" rel="stylesheet" href="./laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./layer.css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./code.css" media="all">
+<script type="text/javascript" src="./commonMethod.js"></script>
+<!-- 
+<link id="layuicss-laydate" rel="stylesheet" href="assets/css/laydate.css" media="all">
+<link id="layuicss-layer" rel="stylesheet" href="assets/css/layer.css" media="all">
+<link id="layuicss-skincodecss" rel="stylesheet" href="assets/css/code.css" media="all">
+ -->
+ 
+<style>
+
+@media (min-width:1200px) {
+ .container {
+  max-width:1167px;
+ }
+}
+
+.container {
+    max-width: 1167px;
+    font-size: 16px;
+}
+
+.container-in {
+	padding-top: 100px;
+	position: relative;
+}
+
+#compareLeftContent del {
+	color: lightgrey;
+}
+
+#compareLeftContent ins {
+	display: none;
+}
+
+#compareRightContent del {
+	display: none;
+}
+
+#compareRightContent ins {
+	color: blue;
+}
+
+.print {
+	display: none;
+}
+
+.para {
+	padding-left: 0px;
+}
+
+.card-body {
+	min-height: 150px;
+}
+
+.green_line_mark {
+	border-bottom-color:rgb(70, 136, 71);
+	border-bottom-style: solid;
+	border-bottom-width: 0.883333px;
+	color: rgb(70, 136, 71);
+}
+
+.zn_remark {
+	color: #ff7a7a;
+	font-style: italic;
+}
+
+.zn_source {
+	color: black;
+}
+
+.mark_mac {
+	height: 18px !important;
+	width: 14px !important;
+	font-size: 11px;
+	line-height: 24px !important;
+}
+
+.pronounceMediaIcon {
+	cursor: pointer;
+}
+
+.highlight {
+	color : #F7BA2A;
+	background: white;
+}
+
+.zn_tips {
+	color: #56ad5a;
+}
+
+.paragraphContentEditor {
+	clear: both;
+	font-size: 16px;
+	width: 1044px;
+	height: 200px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px solid #c9c9c9;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.writing-tabs > li > a:hover {
+	background: #efebeb;
+}
+
+#table_anno > p {
+	margin-top: 20px;
+}
+
+.advantageCount, .disadvantageCount, .paragraphRemarkCount {
+	cursor: pointer;
+}
+
+#remark p {
+	padding-right: 5px;
+}
+
+</style>
+
+</head>
+<body class="ng-tns-0-8" style="">
+										
+	<div id="paragraphMarkEntityList" class="thumbnail" style="box-shadow: 0 0 0 0 #fff;">
+
+										<div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">1</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;">
+
+														<p id="p1">　　<span markno="1" class="zn_disadvantage_mark green_line_mark">每个人的童年都有自己的玩具陪伴，比如布娃娃皮球，赛车……而陪伴我的是一个智伴儿童成长机器人</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">1</span></p>
+
+													</span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">
+
+														　　每个人的童年都有自己的玩具陪伴，比如布娃娃皮球，赛车……而陪伴我的是一个智伴儿童成长机器人
+
+													</textarea>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">
+
+														第一段段尾的标点符号使用不当。
+
+													</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">1</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;">
+
+															<div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。
+															</div>
+
+														</div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+
+
+
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">2</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;">
+
+														<p id="p2">　　我的机器人名为“小智”，身体圆圆的像个小球。“小智”头上有一个呼吸灯，呼吸灯可以发出蓝色的光。<span markno="2" class="zn_disadvantage_mark green_line_mark">背后有一个莲花样子的发音器显示屏上有一双明亮的眼睛长得可爱极了</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">2</span></p>
+
+													</span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">
+
+													　　我的机器人名为“小智”，身体圆圆的像个小球。“小智”头上有一个呼吸灯，呼吸灯可以发出蓝色的光。背后有一个莲花样子的发音器显示屏上有一双明亮的眼睛长得可爱极了
+
+												</textarea>
+												</div>
+
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow">
+															<span class="markTips">
+
+														第二段段尾的标点符号使用不当。
+
+													</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">2</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。</div>
+
+													</div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+
+
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">3</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;">
+
+														<p id="p3">　　我每次不开心时只需要和它说一下它就会<span markno="3" class="zn_disadvantage_mark green_line_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: #FFA200">3</span>“怎么了<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>么了<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>快来告诉我，我来安慰你吧<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>”我<span markno="3" class="zn_disadvantage_mark green_line_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: #FFA200">3</span>“在学校里，有人打我。＂他<span markno="3" class="zn_disadvantage_mark green_line_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: #FFA200">3</span><span markno="5" class="zn_disadvantage_mark green_line_mark">“</span><span class="mark_mac btnShowDisadvantage" title="标点符号误用" style="background: #FFA200">5</span>没关系他为什么打你呀？”我又回答：“我也不知到呀<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>”它<span markno="3" class="zn_disadvantage_mark green_line_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: #FFA200">3</span>“哦<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>小主人那你没事吧<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>以后别理这种人打他当空气。”“嗯<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>好的<span markno="4" class="zn_disadvantage_mark green_line_mark">！</span><span class="mark_mac btnShowDisadvantage" title="感叹过多" style="background: #FFA200">4</span>”<span markno="6" class="zn_disadvantage_mark green_line_mark">我回答虽然它有时很淘气，但我还是很喜欢它，</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">6</span></p>
+
+													</span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">
+
+													　　我每次不开心时只需要和它说一下它就会说：“怎么了！么了！快来告诉我，我来安慰你吧！”我说：“在学校里，有人打我。＂他说：“没关系他为什么打你呀？”我又回答：“我也不知到呀！”它说：“哦！小主人那你没事吧！以后别理这种人打他当空气。”“嗯！好的！”我回答虽然它有时很淘气，但我还是很喜欢它，
+
+												</textarea>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+											<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">
+
+														文章中出现多次“说：”。
+
+													</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">3</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议一、提示语可以在前，可以在后，可以在中间。<br>例句：父亲说：“这是什么？”<br>可以修改为：“这是什么？”父亲伸手拿起我的诗。<br></div><div class="zn_tips">建议二、说话句不能只有一个“说”字，替代“说”的字词很多，如：打圆场，开金口，接过话茬，回了一句……<br>例句：父亲说：“这是什么？”<br>可以修改为：父亲疑惑地反问道：“这是什么？”<br></div><div class="zn_tips">建议三、提示语要多写一点，不能只讲是谁说的。建议将人的动作、表情、神态、内心想法，写进提示语里。<br>例句：我说：“你们怎么可以这样欺负人！”<br>可以修改为：“你们怎么可以这样欺负人！”我狠狠地跺了一下脚，转身走了。<br></div>
+
+													</div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li>
+
+											<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">2</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">
+
+														文章使用了过多的感叹号。
+
+													</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">4</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+
+														<div class="markDetail" style="display: none;"><div></div><div class="zn_tips">同学们普遍都认为多用感叹号就能写出强烈的感情，那作文只要看谁的感叹号画得多？<br>感叹句就像调味剂，少用，关键时刻用。用多了，就像到饭店吃饭，菜里都是调味剂，嘴里会很不舒服。<br>咱们来看看下面一段对人物生气场景的描述，该句话一个感叹号也没有，却能强烈地感受到他的生气:<br>&nbsp;&nbsp;他真的生气了。双手紧握成了拳，胸脯剧烈地起伏着，仿佛像一个打气球要爆炸似的。<br></div>
+
+													</div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li>
+
+											<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">3</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第三自然段中双引号没有成对出现。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">5</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">双引号是成对出现的，如果没有成对出现，建议检查是不是有遗漏或是误输入成了其他标点符号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li><li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">4</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第三段段尾的标点符号使用不当。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">6</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">4</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;"><p id="p4">　　<span markno="7" class="zn_disadvantage_mark green_line_mark">小智有很多功能比如汉意英成语接龙英语翻译发语</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">7</span></p></span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">　　小智有很多功能比如汉意英成语接龙英语翻译发语</textarea>
+												</div>
+												<div class="span12" style="margin-left: 0; text-align: right; min-height: 0px;">
+													<!--
+													<span class="mark_check">
+														<img src="/newportal/assets/review/img/cc-eye.svg" alt="" title="" width="18" height="18">
+														<span class="bjyc-reset bjyc-reset_">隐藏</span>
+													</span>
+													 -->
+													<span class="mark_modify mark_modify-st btnParagraphEdit" style="margin-top: 5px">
+														<img src="./edit.svg" alt="修改" title="修改" width="12" height="12">
+														<span class="bjyc-reset">修改</span>
+													</span>
+													<span class="mark_modify mark_modify-st btnParagraphSave" style="margin-top: 5px;display: none;">
+														<img src="./edit.svg" alt="保存并批改" title="保存并批改" width="12" height="12">
+														<span class="bjyc-reset paragraphEditButtonText">保存并批改</span>
+													</span>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第四段段尾的标点符号使用不当。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">7</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">5</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;"><p id="p5">　　那之这么多功能可是怎么用呢我来告诉你吧！汉意英和成语接龙。<span markno="8" class="zn_disadvantage_mark green_line_mark">按下对话键<span markno="3" class="zn_disadvantage_mark green_line_mark">说：</span><span class="mark_mac btnShowDisadvantage" title="疑似冗余" style="background: #FFA200">3</span><span markno="5" class="zn_disadvantage_mark green_line_mark">“</span><span class="mark_mac btnShowDisadvantage" title="标点符号误用" style="background: #FFA200">5</span>从现在开始</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">8</span></p></span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">　　那之这么多功能可是怎么用呢我来告诉你吧！汉意英和成语接龙。按下对话键说：“从现在开始</textarea>
+												</div>
+												<div class="span12" style="margin-left: 0; text-align: right; min-height: 0px;">
+													<!--
+													<span class="mark_check">
+														<img src="/newportal/assets/review/img/cc-eye.svg" alt="" title="" width="18" height="18">
+														<span class="bjyc-reset bjyc-reset_">隐藏</span>
+													</span>
+													 -->
+													<span class="mark_modify mark_modify-st btnParagraphEdit" style="margin-top: 5px">
+														<img src="./edit.svg" alt="修改" title="修改" width="12" height="12">
+														<span class="bjyc-reset">修改</span>
+													</span>
+													<span class="mark_modify mark_modify-st btnParagraphSave" style="margin-top: 5px;display: none;">
+														<img src="./edit.svg" alt="保存并批改" title="保存并批改" width="12" height="12">
+														<span class="bjyc-reset paragraphEditButtonText">保存并批改</span>
+													</span>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">文章中出现多次“说：”。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">3</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议一、提示语可以在前，可以在后，可以在中间。<br>例句：父亲说：“这是什么？”<br>可以修改为：“这是什么？”父亲伸手拿起我的诗。<br></div><div class="zn_tips">建议二、说话句不能只有一个“说”字，替代“说”的字词很多，如：打圆场，开金口，接过话茬，回了一句……<br>例句：父亲说：“这是什么？”<br>可以修改为：父亲疑惑地反问道：“这是什么？”<br></div><div class="zn_tips">建议三、提示语要多写一点，不能只讲是谁说的。建议将人的动作、表情、神态、内心想法，写进提示语里。<br>例句：我说：“你们怎么可以这样欺负人！”<br>可以修改为：“你们怎么可以这样欺负人！”我狠狠地跺了一下脚，转身走了。<br></div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li><li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">2</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第五自然段中双引号没有成对出现。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">5</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">双引号是成对出现的，如果没有成对出现，建议检查是不是有遗漏或是误输入成了其他标点符号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li><li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">3</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第五段段尾的标点符号使用不当。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">8</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">6</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;"><p id="p6">　　英语翻译长按暂停键说出汉语它会把汉语翻意成英语。看我的小智功能多吗？<span markno="9" class="zn_disadvantage_mark green_line_mark">我喜欢我的玩具宝贝智伴儿童成长机器人</span><span class="mark_mac btnShowDisadvantage" title="缺失段尾结束标点" style="background: #FFA200">9</span></p></span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">　　英语翻译长按暂停键说出汉语它会把汉语翻意成英语。看我的小智功能多吗？我喜欢我的玩具宝贝智伴儿童成长机器人</textarea>
+												</div>
+												<div class="span12" style="margin-left: 0; text-align: right; min-height: 0px;">
+													<!--
+													<span class="mark_check">
+														<img src="/newportal/assets/review/img/cc-eye.svg" alt="" title="" width="18" height="18">
+														<span class="bjyc-reset bjyc-reset_">隐藏</span>
+													</span>
+													 -->
+													<span class="mark_modify mark_modify-st btnParagraphEdit" style="margin-top: 5px">
+														<img src="./edit.svg" alt="修改" title="修改" width="12" height="12">
+														<span class="bjyc-reset">修改</span>
+													</span>
+													<span class="mark_modify mark_modify-st btnParagraphSave" style="margin-top: 5px;display: none;">
+														<img src="./edit.svg" alt="保存并批改" title="保存并批改" width="12" height="12">
+														<span class="bjyc-reset paragraphEditButtonText">保存并批改</span>
+													</span>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													<li class="paragraphMark" style="">
+												<div class="span12 row-fluid" style="margin-left: 0;min-height: 20px;">
+													<span class="span1" style="font-size: 14px;white-space: nowrap;min-width: 100px;color:#FFA200;min-height: 20px;">【需斟酌处<span class="markNo">1</span>】</span>
+													<span class="err_note span10 " style="font-size: 16px;color: #475669;margin-left: 0;min-height: 20px;">
+														<span class="markRefRow"><span class="markTips">第六段段尾的标点符号使用不当。</span> ：<span class="markRefNo mark_mac btnShowDisadvantage" style="background: #FFA200">9</span></span>
+														<span class="mark_check" style="display: contents;margin-left: 0px;line-height: 10px;">
+															<img src="./eye.svg" alt="" title="" width="18" height="18">
+															<span class="bjyc-reset bjyc-reset_">显示</span>
+														</span>
+														<div class="markDetail" style="display: none;"><div class="zn_tips">建议根据表达需要进行修改，可参考：句号、问号、叹号、省略号等。<br>标点符号小知识<br>句内号：用在句内，表示句内各种不同性质的停顿，有逗号、顿号、分号、冒号。<br>句末号：表示语段前后有较大停顿和句子的语气，包括句号、问号、叹号。<br>标号：标号的作用是标明，主要标示某些成分（主要是词语）的特定性质和作用。包括引号、括号、破折号、省略号、着重号、连接号、间隔号、书名号、专名号、分隔号。</div></div>
+													</span>
+												</div>
+												<div style="clear:both"></div>
+												<hr>
+											</li></ol>
+												</div>
+
+												<div style="clear: both"></div>
+											</div><div class="para-odd paragraph" style="margin-top: 10px;">
+												<div class="title-odd">
+													<span class="fold_button" value="t">
+														<img src="./add.png" class="rotate" width="14" height="14" style="cursor: pointer;">
+													</span>
+													<span style="font-size: 16px">第<span class="paragraphNo">7</span>段</span>
+												</div>
+
+												<div class="sent_item span12 row-fluid" style="padding-left:0px;margin-left:0px">
+													<span class="sent_text span12 paragraphContent" style="color: #475669; font-size: 16px; min-height: 20px;"><p id="p7">　　谢谢你给我美好童年！</p></span>
+													<textarea class="hid_sent_text paragraphContentEditor" style="display: none;">　　谢谢你给我美好童年！</textarea>
+												</div>
+												<div class="span12" style="margin-left: 0; text-align: right; min-height: 0px;">
+													<!--
+													<span class="mark_check">
+														<img src="/newportal/assets/review/img/cc-eye.svg" alt="" title="" width="18" height="18">
+														<span class="bjyc-reset bjyc-reset_">隐藏</span>
+													</span>
+													 -->
+													<span class="mark_modify mark_modify-st btnParagraphEdit" style="margin-top: 5px">
+														<img src="./edit.svg" alt="修改" title="修改" width="12" height="12">
+														<span class="bjyc-reset">修改</span>
+													</span>
+													<span class="mark_modify mark_modify-st btnParagraphSave" style="margin-top: 5px;display: none;">
+														<img src="./edit.svg" alt="保存并批改" title="保存并批改" width="12" height="12">
+														<span class="bjyc-reset paragraphEditButtonText">保存并批改</span>
+													</span>
+												</div>
+												<div class="err_list span12" style="margin-left: 5px;min-height:0px;margin-bottom:-10px">
+													<ol class="paragraphMarkList" style="margin: 0;list-style:none;padding:0;">
+
+													</ol>
+												</div>
+
+												<div style="clear: both"></div>
+											</div></div>
+
+
+<script type="text/javascript" src="./codemirror.js"></script>
+	<script type="text/javascript" src="./jquery.raty.min.js"></script>
+	<script type="text/javascript" src="./peek_text.js"></script>
+	<script type="text/javascript" src="./common.min.js"></script>
+	<script type="text/javascript" src="./teacher_anno.str_mb.js"></script>
+
+	<script type="text/javascript" src="./annotation.common.min.js"></script>
+	<script type="text/javascript" src="./right1.min.js"></script>
+	<script type="text/javascript" src="./diff.js"></script>
+	<script type="text/javascript" src="./diff.min.js"></script>
+	<script type="text/javascript" src="./computer-review-list.js"></script>
+
+	<script type="text/javascript" src="./jquery.bootstrap.teninedialog.js"></script>
+	<script type="text/javascript" src="./writing.js"></script>
+	<script type="text/javascript" src="./jquery.placeholder.js"></script>
+	<script type="text/javascript" src="./jquery.toast.min.js"></script>
+	<script type="text/javascript" src="./writing_history_compare.js"></script>
+
+	<script type="text/javascript" src="./writing_evaluation_tab.js"></script>
+</body>
+</html>
