@@ -44,6 +44,7 @@ class CutImageViewController: UIViewController {
     fileprivate var rotateBtn = UIButton.init();
     fileprivate var resetBtn = UIButton.init();
     fileprivate var cutBtn = UIButton.init();
+    fileprivate var uploadButton:UIButton?;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +61,12 @@ class CutImageViewController: UIViewController {
         backButton.addTarget(self, action: #selector(CutImageViewController.backButtonClick(button:)), for: .touchUpInside);
         self.view.addSubview(backButton);
         
-        let uploadButton = UIButton.init(frame: CGRect.init(x: rect.size.width-65, y: CGFloat(TU_StatusBarHeight)+5, width: 50, height: 30));
-        uploadButton.setTitle("上传", for: .normal);
-        uploadButton.setTitleColor(UIColor.init(red: 46.0/255.0, green: 138.0/255.0, blue: 254.0/255.0, alpha: 1.0), for: .normal);
-        uploadButton.addTarget(self, action: #selector(CutImageViewController.uploadButtonClick(button:)), for: .touchUpInside);
-        self.view.addSubview(uploadButton);
+        uploadButton = UIButton.init(frame: CGRect.init(x: rect.size.width-65, y: CGFloat(TU_StatusBarHeight)+5, width: 50, height: 30));
+        uploadButton?.setTitle("上传", for: .normal);
+        uploadButton?.setTitleColor(UIColor.init(red: 46.0/255.0, green: 138.0/255.0, blue: 254.0/255.0, alpha: 1.0), for: .normal);
+        self.uploadButton?.setTitleColor(.gray, for: .disabled);
+        uploadButton?.addTarget(self, action: #selector(CutImageViewController.uploadButtonClick(button:)), for: .touchUpInside);
+        self.view.addSubview(uploadButton!);
         
         if self.resizeImage != nil {
             self.imageresizerView = JPImageresizerView.init(resize: self.resizeImage!, frame: CGRect.init(x: 15, y: CGFloat(TU_StatusBarHeight+TU_SysNavbarHeight), width: rect.size.width-30, height: rect.size.height-CGFloat(TU_StatusBarHeight+TU_SysNavbarHeight+TU_Home_Indicator)-60), maskType: .normalMaskType, frameType: .classicFrameType, animationCurve: .easeOut, stroke: .white, bgColor: .black, maskAlpha: 0.75, verBaseMargin: 10, horBaseMargin: 10, resizeWHScale: 0, contentInsets: UIEdgeInsets.zero, imageresizerIsCanRecovery: { [weak self](isCanRecovery) in
@@ -73,6 +75,7 @@ class CutImageViewController: UIViewController {
                 let enabled = !isPrepareToScale;
                 self?.rotateBtn.isEnabled = enabled;
                 self?.cutBtn.isEnabled = enabled;
+                self?.uploadButton?.isEnabled = enabled;
             })
             self.view.addSubview(self.imageresizerView!);
             
@@ -126,9 +129,13 @@ class CutImageViewController: UIViewController {
     }
     
     @objc func uploadButtonClick(button:UIButton) -> Void {
-        if self.resizeImage != nil {
-            self.delegate?.imageCutCompletion(image: self.resizeImage!);
-        }
+        self.imageresizerView?.imageresizer(complete: { [weak self](image) in
+            if image != nil {
+                self?.delegate?.imageCutCompletion(image: image!);
+                self?.resizeImage = image;
+                self?.imageresizerView?.resizeImage = image;
+            }
+        })
         self.dismiss(animated: true, completion: nil);
     }
     
@@ -143,7 +150,7 @@ class CutImageViewController: UIViewController {
     @objc func cutButtonClick(button:UIButton) -> Void {
         self.imageresizerView?.imageresizer(complete: { [weak self](image) in
             if image != nil {
-                self?.delegate?.imageCutCompletion(image: image!);
+                //self?.delegate?.imageCutCompletion(image: image!);
                 self?.resizeImage = image;
                 self?.imageresizerView?.resizeImage = image;
             }

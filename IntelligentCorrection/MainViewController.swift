@@ -83,7 +83,6 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         set {
             _isCleanContent = newValue;
             if (_isCleanContent) {
-                self.titleView.text = "";
                 self.contentView.text = "作文内容";
                 self.contentView.textColor = UIColor.lightGray;
             }
@@ -178,7 +177,7 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         self.view.addSubview(self.titleView);
         self.titleView.snp.makeConstraints { (make) in
             make.left.equalTo(self.view).offset(20);
-            make.top.equalTo(self.view.snp_topMargin).offset(20);
+            make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(20);
             make.right.equalTo(self.view).offset(-20);
             make.height.equalTo(40);
         }
@@ -288,6 +287,7 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         let alert = UIAlertController.init(title: "提示", message: "确定清空所有内容吗？", preferredStyle: .alert);
         let ok = UIAlertAction.init(title: "确定", style: .default) { (action) in
             self.isCleanContent = true;
+            self.titleView.text = "";
         }
         alert.addAction(ok);
         let cancel = UIAlertAction.init(title: "取消", style: .cancel, handler: nil);
@@ -367,14 +367,7 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     
     @objc func intelligentCorrectClick(button:UIButton) -> Void {
         
-        let vc = EvaluateViewController.init();
-        vc.articleTitle = "";
-        vc.articleContent = self.contentView.text;
-        vc.gradeID = self.gradeID;
-        self.navigationController?.pushViewController(vc, animated: true);
-        return;
-        
-        if let title = self.titleView.text,title.count > 0, self.contentView.text.count > 0
+        if let title = self.titleView.text,title.count > 0, self.contentView.text.count > 0,self.isCleanContent == false
         {
             let vc = EvaluateViewController.init();
             vc.articleTitle = title;
@@ -401,6 +394,9 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
             self.contentView.text = "作文内容";
             self.contentView.textColor = UIColor.lightGray;
             self.isCleanContent = true;
+        }
+        else {
+            self.isCleanContent = false;
         }
     }
     
@@ -436,9 +432,6 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                     let hudProgress = MBProgressHUD.showAdded(to: self.view, animated: true);
                     hudProgress.mode = MBProgressHUDMode.indeterminate;
                     hudProgress.label.text = "正在识别，请稍后";
-                    upload.uploadProgress(closure: { (progress) in
-                        hudProgress.progress = Float(progress.completedUnitCount);
-                    })
                     
                     upload.responseJSON { response in
                         //print response.result
@@ -456,7 +449,6 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                                     }
                                     self.isCleanContent = false;
                                     self.contentView.textColor = UIColor.black;
-                                    self.dismiss(animated: true, completion: nil);
                                     return;
                                 }
                             }
@@ -468,7 +460,7 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                     
                 case .failure(let encodingError):
                     print(encodingError);
-                    self.view.makeToast("识别失败!",duration:1.0,position:.center);
+                    self.view.makeToast("上传图片失败!",duration:1.0,position:.center);
                 }
             })
             

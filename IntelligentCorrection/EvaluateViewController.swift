@@ -207,7 +207,7 @@ class EvaluateViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         else if (indexPath.section == 1)
         {
-            return 120;
+            return 150;
         }
         else
         {
@@ -228,9 +228,7 @@ class EvaluateViewController: UIViewController,UITableViewDelegate,UITableViewDa
             }
             cell?.textLabel?.textAlignment = .center;
             cell?.textLabel?.textColor = UIColor.red;
-            if self.score > 0 {
-                cell?.textLabel?.text = String.init(format: "%d", self.score);
-            }
+            cell?.textLabel?.text = String.init(format: "%d", self.score);
             return cell!;
         }
         else if (indexPath.section == 1)
