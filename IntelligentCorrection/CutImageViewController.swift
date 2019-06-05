@@ -129,11 +129,9 @@ class CutImageViewController: UIViewController {
     }
     
     @objc func uploadButtonClick(button:UIButton) -> Void {
-        self.imageresizerView?.imageresizer(complete: { [weak self](image) in
+        self.imageresizerView?.originImageresizer(complete: { [weak self](image) in
             if image != nil {
                 self?.delegate?.imageCutCompletion(image: image!);
-                self?.resizeImage = image;
-                self?.imageresizerView?.resizeImage = image;
             }
         })
         self.dismiss(animated: true, completion: nil);
@@ -150,7 +148,6 @@ class CutImageViewController: UIViewController {
     @objc func cutButtonClick(button:UIButton) -> Void {
         self.imageresizerView?.imageresizer(complete: { [weak self](image) in
             if image != nil {
-                //self?.delegate?.imageCutCompletion(image: image!);
                 self?.resizeImage = image;
                 self?.imageresizerView?.resizeImage = image;
             }

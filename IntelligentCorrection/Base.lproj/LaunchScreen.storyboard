@@ -25,9 +25,21 @@
                                     <constraint firstAttribute="width" constant="150" id="UbX-GA-Th9"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to cym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W87-dy-iqg">
+                                <rect key="frame" x="346" y="821" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NCP-uu-d7x"/>
+                                    <constraint firstAttribute="width" constant="53" id="bFU-JF-Ygn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="W87-dy-iqg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="3Av-D1-WTd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W87-dy-iqg" secondAttribute="trailing" constant="15" id="9CS-2E-LZt"/>
                             <constraint firstItem="26D-Qf-TNK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="1:3" id="Hj3-Hj-FBe"/>
                             <constraint firstItem="26D-Qf-TNK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eqg-fK-IAv"/>
                         </constraints>

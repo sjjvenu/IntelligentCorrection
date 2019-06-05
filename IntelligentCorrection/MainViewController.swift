@@ -296,6 +296,19 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     }
     
     @objc func uploadButtonClick(button:UIButton) -> Void {
+        
+//        let vc = AipGeneralVC.viewController { [weak self](image) in
+//            if image != nil {
+//                self?.imageCutCompletion(image: image!);
+//            }
+//            self?.dismiss(animated: true, completion: nil);
+//        }
+//        if vc != nil {
+//            self.present(vc!, animated: true, completion: nil);
+//        }
+//
+//        return;
+        
         let actionSheet = UIAlertController.init(title: "上传作文图片", message: nil, preferredStyle: .actionSheet);
         let cancel = UIAlertAction.init(title: "取消", style: .cancel, handler: nil);
         actionSheet.addAction(cancel);
